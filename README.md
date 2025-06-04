@@ -27,7 +27,7 @@ Rock paper scissor/
 
 ## 📸 Screenshot
 
-![Game Screenshot](screenshot.png)
+![Game Screenshot](image/screenshot.png)
 
 ## 📦 How to Run
 
