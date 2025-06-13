@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>ROCK PAPER SCISSORS</h1>
-    <div class="choises">
-        <div class="choise" id="paper">
-            <img src="images/paper.png" alt="">
-        </div>
-        <div class="choise" id="rock">
-            <img src="images/rock.png" alt="">
-        </div>
-        <div class="choise" id="scissors">
-            <img src="images/scissors.png" alt="">
-        </div>
+  <h1>Rock Paper Scissors</h1>
+
+  <div class="choices">
+    <div class="choice" id="rock">
+      <img src="images/rock.png" alt="Rock" />
+      <p>Rock</p>
     </div>
-    <div class="board">
-        <div class="score" id="ip">
-            <p class="title">YOU</p>
-            <p id="urc">Your Choise</p>
-            <p class="ssr">Score</p>
-            <p id="urscore">0</p>
-        </div>
-        <div class="score" id="comp">
-            <p class="title">COMPUTER</p>
-            <p id="coc">Computer Choise</p>
-            <p class="ssr">Score</p>
-            <p id="coscore">0</p>
-        </div>
+    <div class="choice" id="paper">
+      <img src="images/paper.png" alt="Paper" />
+      <p>Paper</p>
     </div>
-    <div class="msg">
-        <p id="last">Select Something</p>
+    <div class="choice" id="scissors">
+      <img src="images/scissors.png" alt="Scissors" />
+      <p>Scissors</p>
     </div>
-    
-    <script src="script.js"></script>
+  </div>
+
+  <div class="board">
+    <div class="score glass" id="player">
+      <h2>YOU</h2>
+      <p class="choice-display" id="user-choice">-</p>
+      <p>Score: <span id="user-score">0</span></p>
+    </div>
+    <div class="score glass" id="computer">
+      <h2>COMPUTER</h2>
+      <p class="choice-display" id="comp-choice">-</p>
+      <p>Score: <span id="comp-score">0</span></p>
+    </div>
+  </div>
+
+  <div class="result glass" id="result-msg">Make your move!</div>
+
+  <button class="reset-btn">Reset Game</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
